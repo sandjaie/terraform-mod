@@ -7,7 +7,7 @@ resource "aws_subnet" "subnet" {
   availability_zone       = element(var.availability_zones, count.index)
 
   tags = merge(var.tags, local.tags, {
-    Name = "${var.environment}-${var.subnet_type}-${count.index + 1}"
+    Name = "${var.environment}-${var.subnet_type}-${count.index + 1}-${element(var.availability_zones, count.index)}"
     AZ   = element(var.availability_zones, count.index)
   })
 }
