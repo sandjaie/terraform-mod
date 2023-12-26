@@ -1,0 +1,11 @@
+.terraform
+.terraform.lock.hcl
+.terragrunt-cache
+**/.terraform.lock.hcl
+.env
+**/.aws-auth*
+
+# IDE
+.idea/
+**/.DS_Store
+.DS_Store
