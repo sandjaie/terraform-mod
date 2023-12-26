@@ -23,8 +23,13 @@ variable "subnet_ids" {
 variable "nodegroup_name" {
   description = "Name of the nodegroup"
   type        = string
-  default     = "app"
 }
+
+#variable "create_node_group" {
+#  description = "Boolean to create node group"
+#  type        = bool
+#  default     = true
+#}
 
 variable "nodegroup" {
   description = "Specifications of nodegroup"

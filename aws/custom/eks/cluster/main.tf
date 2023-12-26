@@ -18,6 +18,7 @@ module "eks" {
 
 module "node_group" {
   source = "../../../native/containers/eks/nodegroups"
+  #count = var.create_node_group ? 1 : 0
 
   depends_on = [module.eks]
 
