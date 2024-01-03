@@ -32,9 +32,7 @@ No modules.
 | [kubernetes_cluster_role.eks_console_full_access](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/cluster_role) | resource |
 | [kubernetes_cluster_role.eks_read_only](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/cluster_role) | resource |
 | [kubernetes_cluster_role.eks_write_access](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/cluster_role) | resource |
-| [kubernetes_cluster_role.istio_write_access](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/cluster_role) | resource |
 | [kubernetes_cluster_role_binding.eks_console_full_access_binding](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/cluster_role_binding) | resource |
-| [kubernetes_cluster_role_binding.eks_istio_write_access](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/cluster_role_binding) | resource |
 | [kubernetes_cluster_role_binding.eks_read_only_binding](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/cluster_role_binding) | resource |
 | [kubernetes_cluster_role_binding.eks_write_access](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/cluster_role_binding) | resource |
 | [kubernetes_config_map.aws_auth](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/config_map) | resource |
@@ -49,10 +47,8 @@ No modules.
 | <a name="input_create_eks_full_access_cluser_role"></a> [create\_eks\_full\_access\_cluser\_role](#input\_create\_eks\_full\_access\_cluser\_role) | Creates eks\_full\_access cluster role in kube-system. Note: uses cluster-admin by default | `bool` | `false` | no |
 | <a name="input_create_eks_read_only_role"></a> [create\_eks\_read\_only\_role](#input\_create\_eks\_read\_only\_role) | Creates eks read only role                                                                 | `bool` | `true` | no |
 | <a name="input_create_eks_write_access_role"></a> [create\_eks\_write\_access\_role](#input\_create\_eks\_write\_access\_role) | Creates cluster role with write access                                                     | `bool` | `false` | no |
-| <a name="input_create_istio_write_access"></a> [create\_istio\_write\_access](#input\_create\_istio\_write\_access) | creates istio\_write\_access cluster role                                                  | `bool` | `true` | no |
 | <a name="input_eks_cluster_name"></a> [eks\_cluster\_name](#input\_eks\_cluster\_name) | Name of the eks cluster                                                                    | `string` | n/a | yes |
 | <a name="input_eks_console_full_access_role_name"></a> [eks\_console\_full\_access\_role\_name](#input\_eks\_console\_full\_access\_role\_name) | Name of the eks\_console\_full\_access cluster role                                        | `string` | `"eks-console-full-access"` | no |
-| <a name="input_eks_istio_write_access_name"></a> [eks\_istio\_write\_access\_name](#input\_eks\_istio\_write\_access\_name) | Name of the eks\_istio\_write\_access cluster role                                         | `string` | `"eks-istio-write-access"` | no |
 | <a name="input_eks_read_only_name"></a> [eks\_read\_only\_name](#input\_eks\_read\_only\_name) | Name of the read\_only cluster role                                                        | `string` | `"eks-read-only"` | no |
 | <a name="input_eks_write_access_name"></a> [eks\_write\_access\_name](#input\_eks\_write\_access\_name) | Name of the eks\_write\_access cluster role                                                | `string` | `"eks-write-access"` | no |
 | <a name="input_map_additional_aws_accounts"></a> [map\_additional\_aws\_accounts](#input\_map\_additional\_aws\_accounts) | Additional AWS account numbers to add to `config-map-aws-auth` ConfigMap                   | `list(string)` | `[]` | no |
@@ -66,7 +62,6 @@ No modules.
 |------|-------------|
 | <a name="output_eks_console_cluster_role"></a> [eks\_console\_cluster\_role](#output\_eks\_console\_cluster\_role) | n/a |
 | <a name="output_eks_console_full_access_cluster_role_group"></a> [eks\_console\_full\_access\_cluster\_role\_group](#output\_eks\_console\_full\_access\_cluster\_role\_group) | n/a |
-| <a name="output_eks_istio_write_access_group_name"></a> [eks\_istio\_write\_access\_group\_name](#output\_eks\_istio\_write\_access\_group\_name) | n/a |
 | <a name="output_eks_read_only_group_name"></a> [eks\_read\_only\_group\_name](#output\_eks\_read\_only\_group\_name) | n/a |
 | <a name="output_eks_read_only_role"></a> [eks\_read\_only\_role](#output\_eks\_read\_only\_role) | n/a |
 | <a name="output_eks_write_access_group_name"></a> [eks\_write\_access\_group\_name](#output\_eks\_write\_access\_group\_name) | n/a |

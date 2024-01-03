@@ -21,7 +21,3 @@ output "eks_read_only_group_name" {
 output "eks_write_access_group_name" {
   value = local.eks_write_access_group_name
 }
-
-output "eks_istio_write_access_group_name" {
-  value = local.eks_istio_write_access_group_name
-}
